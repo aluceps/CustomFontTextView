@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CustomTextView</string>
+
+    <string name="text">abcdABCD0123あいうえお</string>
 </resources>

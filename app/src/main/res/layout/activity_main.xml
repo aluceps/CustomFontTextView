@@ -3,19 +3,59 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <android.support.constraint.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
         tools:context="me.aluceps.customtextview.MainActivity">
 
         <TextView
+            style="?android:attr/textAppearanceLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:text="@string/text" />
 
-    </android.support.constraint.ConstraintLayout>
+        <me.aluceps.customtextview.CustomFontTextView
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text"
+            app:typeface="fonts/NotoSansCJK-Thin.ttc" />
+
+        <me.aluceps.customtextview.CustomFontTextView
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text"
+            app:typeface="fonts/NotoSansCJK-Light.ttc" />
+
+        <me.aluceps.customtextview.CustomFontTextView
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text"
+            app:typeface="fonts/NotoSansCJK-DemiLight.ttc" />
+
+        <me.aluceps.customtextview.CustomFontTextView
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text"
+            app:typeface="fonts/NotoSansCJK-Regular.ttc" />
+
+        <me.aluceps.customtextview.CustomFontTextView
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text"
+            app:typeface="fonts/NotoSansCJK-Medium.ttc" />
+
+        <me.aluceps.customtextview.CustomFontTextView
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text"
+            app:typeface="fonts/NotoSansCJK-Black.ttc" />
+    </LinearLayout>
 </layout>
